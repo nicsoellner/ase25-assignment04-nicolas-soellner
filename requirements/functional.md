@@ -5,3 +5,5 @@ As a Customer, I want to track the status of my order so that I know when my foo
 As a Customer, I want to filter meals by category so that I can order meals that fit my business (i. e. Vegan Only)
 
 As a Customer, I want schedule deliveries so that my ingredients arrive on time
+
+As a Customer, I want to view the list of available meals so that I can choose which ingredients to order
