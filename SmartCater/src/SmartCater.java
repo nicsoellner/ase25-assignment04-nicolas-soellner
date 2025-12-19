@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.ArrayList;
 
 
@@ -30,6 +29,7 @@ public class SmartCater {
         eggsAndOnion.addIngredient(egg);
         eggsAndOnion.addIngredient(onion);
 
+        //Adds meals to "database"
         Meals.add(baconAndEggs);
         Meals.add(eggsAndOnion);
 

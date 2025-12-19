@@ -2,8 +2,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 
-import static java.lang.Math.*;
-
 public class Meal{
     String name;
     ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
@@ -21,6 +19,7 @@ public class Meal{
         return bd.doubleValue();
     }
 
+    //Allows us to print meals with System.out
     public String toString() {
         double total_price = 0.0;
         for(Ingredient ingredient : ingredients){
@@ -29,6 +28,7 @@ public class Meal{
         return this.name + "\t" + round(total_price, 2);
     }
 
+    //Adds ingredient to a meal
     public void addIngredient(Ingredient ingredient){
         ingredients.add(ingredient);
     }
