@@ -1,11 +1,12 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
 
 import static java.lang.Math.*;
 
 public class Meal{
     String name;
-    Ingredient[] ingredients;
+    ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
     private int ingredient_counter = 0;
 
 // Source - https://stackoverflow.com/a
@@ -29,13 +30,11 @@ public class Meal{
     }
 
     public void addIngredient(Ingredient ingredient){
-        ingredients[ingredient_counter] = ingredient;
-        ingredient_counter++;
+        ingredients.add(ingredient);
     }
 
-    public Meal(String name, int number_of_ingredients){
+    public Meal(String name){
         this.name = name;
-        ingredients = new Ingredient[number_of_ingredients];
     }
 
 }

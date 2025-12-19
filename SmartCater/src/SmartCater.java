@@ -19,8 +19,8 @@ public class SmartCater {
         Ingredient bacon = new Ingredient("Bacon", 1.00);
 
         //Then we create some new meals
-        Meal baconAndEggs = new Meal("Bacon and Eggs", 2);
-        Meal eggsAndOnion = new Meal("Eggs and Onion", 2);
+        Meal baconAndEggs = new Meal("Bacon and Eggs");
+        Meal eggsAndOnion = new Meal("Eggs and Onion");
 
         //And add ingredients to the meals
         baconAndEggs.addIngredient(bacon);
